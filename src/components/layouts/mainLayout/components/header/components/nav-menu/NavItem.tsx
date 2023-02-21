@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ListItem, Link, Box } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
-import { NavItemUnit } from "./NavList";
+import { NavItemUnit } from "@/types/navItemUnit";
 
 type NavItemProps = {
   item: NavItemUnit;

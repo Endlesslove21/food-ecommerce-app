@@ -1,10 +1,12 @@
-import { NavItemUnit } from "@/components/layouts/mainLayout/components/header/components/nav-menu/NavList";
+import { NavItemUnit } from "../types/navItemUnit";
+
 export const NAV_LIST_DATA: NavItemUnit[] = [
   {
     label: "QUÀ TẶNG TRÁI CÂY",
     children: [
       {
         label: "Chúc mừng nhân dịp",
+        iconURL: "",
         children: [
           {
             label: "Lễ Tình nhân 14/02",
@@ -38,6 +40,7 @@ export const NAV_LIST_DATA: NavItemUnit[] = [
       },
       {
         label: "Sinh nhật",
+        iconURL: "",
         children: [
           {
             label: "Sinh nhật Ông/ Bà",
@@ -59,6 +62,7 @@ export const NAV_LIST_DATA: NavItemUnit[] = [
       },
       {
         label: "Cảm ơn",
+        iconURL: "",
         children: [
           {
             label: "Cảm ơn Ông/ Bà",
@@ -80,6 +84,7 @@ export const NAV_LIST_DATA: NavItemUnit[] = [
       },
       {
         label: "Chúc sức khỏe",
+        iconURL: "",
         children: [
           {
             label: "Chúc sức khỏe Ông/ Bà",
@@ -101,6 +106,7 @@ export const NAV_LIST_DATA: NavItemUnit[] = [
       },
       {
         label: "Người thương",
+        iconURL: "",
         children: [
           {
             label: "Tặng anh ấy",
@@ -114,12 +120,15 @@ export const NAV_LIST_DATA: NavItemUnit[] = [
       },
       {
         label: "Chúc mừng",
+        iconURL: "",
       },
       {
         label: "Chia buồn",
+        iconURL: "",
       },
       {
         label: "Đi lễ",
+        iconURL: "",
       },
     ],
   },
@@ -128,34 +137,44 @@ export const NAV_LIST_DATA: NavItemUnit[] = [
     children: [
       {
         label: "Cherry",
+        iconURL: "",
       },
       {
+        iconURL: "",
         label: "Berry",
       },
       {
+        iconURL: "",
         label: "Hồng",
       },
       {
+        iconURL: "",
         label: "Dưa",
       },
       {
+        iconURL: "",
         label: "Nho",
       },
       {
+        iconURL: "",
         label: "Táo",
       },
       {
+        iconURL: "",
         label: "Lê",
       },
       {
+        iconURL: "",
         label: "Kiwi",
       },
 
       {
+        iconURL: "",
         label: "Có múi",
       },
 
       {
+        iconURL: "",
         label: "Gift card",
       },
     ],
@@ -165,15 +184,19 @@ export const NAV_LIST_DATA: NavItemUnit[] = [
     children: [
       {
         label: "Bộ đôi dinh dưỡng",
+        iconURL: "",
       },
       {
         label: "BST Vitamin cho bạn",
+        iconURL: "",
       },
       {
         label: "BST Vitamin cho gia đình 3 người",
+        iconURL: "",
       },
       {
         label: "BST Vitamin cho gia đình 5 người",
+        iconURL: "",
       },
     ],
   },

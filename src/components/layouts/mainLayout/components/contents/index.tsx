@@ -1,6 +1,7 @@
 import { Flex, Container, Box } from "@chakra-ui/react";
-import FlashSale from "./flash-sale";
-import CountdownClock from "./flash-sale/countdown-clock";
+import ProductLabel from "./product/ProductLabel";
+import ProductTabList from "./product/ProductTabList";
+
 import ImageSlider from "./slider";
 
 type Props = {};
@@ -14,7 +15,8 @@ const Contents = (props: Props) => {
   return (
     <Box>
       <ImageSlider images={IMAGES} />
-      <FlashSale />
+      <ProductLabel />
+      <ProductTabList />
     </Box>
   );
 };

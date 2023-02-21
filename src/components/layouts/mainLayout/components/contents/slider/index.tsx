@@ -92,10 +92,11 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
           _hover={{ color: "gray.300" }}
         />
       </SlidedButton>
+
       <SlidedButton
         onClick={handleNextImage}
         top={"50%"}
-        // transform={"translateY(-50%)"}
+        transform={"translateY(-50%)"}
         right={0}
       >
         <ChevronRightIcon
@@ -106,9 +107,16 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
       </SlidedButton>
 
       {/* dot */}
-      <Flex position="absolute" right="0">
+      <Flex
+        justifyContent="center"
+        top={"100%"}
+        transform={"translateY(-100%)"}
+      >
         {images.map((item, index) => (
           <Text
+            display="block"
+            onClick={() => setSelectedImageIndex(index)}
+            cursor="pointer"
             color={index === selectedImageIndex ? "primary" : "gray.300"}
             as="span"
             fontSize="50px"
