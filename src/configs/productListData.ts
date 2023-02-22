@@ -12,7 +12,7 @@ export const PRODUCT_LIST_DATA = [
     code: "web2200160-1",
     vendor: "Mỹ",
     originalPrice: 123,
-    status: "còn hàng | hết hàng",
+    status: 1,
     info: [
       {
         sizeBox: "",
@@ -60,7 +60,7 @@ export const PRODUCT_LIST_DATA = [
     code: "web2200160-1",
     vendor: "Mỹ",
 
-    status: "còn hàng | hết hàng",
+    status: 1,
     info: [
       {
         sizeBox: "",
@@ -101,7 +101,7 @@ export const PRODUCT_LIST_DATA = [
     description: "",
   },
   {
-    id: "1",
+    id: "3",
     name: "Flash Sale - 99k/ 01kg Nho đen không hạt Mỹ",
     images: [
       "/assets/images/products/nhodenkhonghat/img1.webp",
@@ -113,7 +113,7 @@ export const PRODUCT_LIST_DATA = [
     code: "web2200160-1",
     vendor: "Mỹ",
 
-    status: "còn hàng | hết hàng",
+    status: 1,
     info: [
       {
         sizeBox: "",
@@ -154,7 +154,7 @@ export const PRODUCT_LIST_DATA = [
     description: "",
   },
   {
-    id: "1",
+    id: "4",
     name: "Flash Sale - 99k/ 01kg Nho đen không hạt Mỹ",
     images: [
       "/assets/images/products/nhodenkhonghat/img1.webp",
@@ -166,7 +166,7 @@ export const PRODUCT_LIST_DATA = [
     code: "web2200160-1",
     vendor: "Mỹ",
 
-    status: "còn hàng | hết hàng",
+    status: 1,
     info: [
       {
         sizeBox: "",
@@ -207,7 +207,7 @@ export const PRODUCT_LIST_DATA = [
     description: "",
   },
   {
-    id: "1",
+    id: "5",
     name: "Flash Sale - 99k/ 01kg Nho đen không hạt Mỹ",
     images: [
       "/assets/images/products/nhodenkhonghat/img1.webp",
@@ -219,7 +219,7 @@ export const PRODUCT_LIST_DATA = [
     code: "web2200160-1",
     vendor: "Mỹ",
 
-    status: "còn hàng | hết hàng",
+    status: 1,
     info: [
       {
         sizeBox: "",
@@ -260,7 +260,7 @@ export const PRODUCT_LIST_DATA = [
     description: "",
   },
   {
-    id: "1",
+    id: "6",
     name: "Flash Sale - 99k/ 01kg Nho đen không hạt Mỹ",
     images: [
       "/assets/images/products/nhodenkhonghat/img1.webp",
@@ -272,7 +272,7 @@ export const PRODUCT_LIST_DATA = [
     code: "web2200160-1",
     vendor: "Mỹ",
 
-    status: "còn hàng | hết hàng",
+    status: 1,
     info: [
       {
         sizeBox: "",

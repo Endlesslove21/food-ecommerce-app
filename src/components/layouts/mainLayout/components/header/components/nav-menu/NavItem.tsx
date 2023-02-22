@@ -1,7 +1,9 @@
 import { useState } from "react";
-import { ListItem, Link, Box } from "@chakra-ui/react";
+import { ListItem, Link, Box, Text } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import { NavItemUnit } from "@/types/navItemUnit";
+import SubNavItem from "./sub-nav/SubNavItem";
+import { NAV_LIST_DATA } from "@/configs/navListData";
 
 type NavItemProps = {
   item: NavItemUnit;
@@ -51,6 +53,7 @@ const NavItem = ({ item }: NavItemProps) => {
           boxSize={5}
         />
       </Link>
+
       {/* sub-menu */}
       <Box></Box>
     </ListItem>

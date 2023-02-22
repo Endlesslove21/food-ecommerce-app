@@ -4,6 +4,8 @@ import "./App.css";
 import { ChakraProvider } from "@chakra-ui/react";
 import theme from "@/configs/theme";
 import Contents from "@/components/layouts/mainLayout/components/contents";
+import Nav1 from "./types/Nav1";
+
 // 2. Call `extendTheme` and pass your custom values
 
 function App() {

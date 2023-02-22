@@ -1,7 +1,7 @@
-import React, { PropsWithChildren } from "react";
+import React, { PropsWithchildren } from "react";
 import { GridItem, Heading } from "@chakra-ui/react";
 
-type CustomGridItemProps = PropsWithChildren<{ headingText: string }>;
+type CustomGridItemProps = PropsWithchildren<{ headingText: string }>;
 
 const CustomGridItem = ({ headingText, children }: CustomGridItemProps) => {
   return (
