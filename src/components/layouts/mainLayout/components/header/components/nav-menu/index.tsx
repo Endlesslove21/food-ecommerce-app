@@ -8,7 +8,7 @@ const NavMenu = (props: Props) => {
   return (
     <NavList>
       {NAV_LIST_DATA.map((item, index) => (
-        <NavItem item={item} key={item.label} />
+        <NavItem key={item.label} data={item} />
       ))}
     </NavList>
   );

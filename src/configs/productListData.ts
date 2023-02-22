@@ -13,34 +13,34 @@ export const PRODUCT_LIST_DATA = [
     vendor: "Mỹ",
     originalPrice: 123,
     status: 1,
-    info: [
+    variants: [
       {
         sizeBox: "",
-        demension: "",
+        dimension: "",
         discountPercent: "-67%",
         specificPrice: 59000,
       },
       {
         sizeBox: "",
-        demension: "",
+        dimension: "",
         discountPercent: "-67%",
         specificPrice: 59000,
       },
       {
         sizeBox: "",
-        demension: "",
+        dimension: "",
         discountPercent: "-67%",
         specificPrice: 59000,
       },
       {
         sizeBox: "",
-        demension: "",
+        dimension: "",
         discountPercent: "-67%",
         specificPrice: 59000,
       },
       {
         sizeBox: "",
-        demension: "",
+        dimension: "",
         discountPercent: "-67%",
         specificPrice: 59000,
       },
@@ -61,38 +61,38 @@ export const PRODUCT_LIST_DATA = [
     vendor: "Mỹ",
 
     status: 1,
-    info: [
+    variants: [
       {
         sizeBox: "",
-        demension: "",
+        dimension: "",
         discountPercent: "-67%",
         specificPrice: 59000,
         originalPrice: 123,
       },
       {
         sizeBox: "",
-        demension: "",
+        dimension: "",
         discountPercent: "-67%",
         specificPrice: 59000,
         originalPrice: 123,
       },
       {
         sizeBox: "",
-        demension: "",
+        dimension: "",
         discountPercent: "-67%",
         specificPrice: 59000,
         originalPrice: 123,
       },
       {
         sizeBox: "",
-        demension: "",
+        dimension: "",
         discountPercent: "-67%",
         specificPrice: 59000,
         originalPrice: 123,
       },
       {
         sizeBox: "",
-        demension: "",
+        dimension: "",
         discountPercent: "-67%",
         specificPrice: 59000,
         originalPrice: 123,
@@ -114,38 +114,38 @@ export const PRODUCT_LIST_DATA = [
     vendor: "Mỹ",
 
     status: 1,
-    info: [
+    variants: [
       {
         sizeBox: "",
-        demension: "",
+        dimension: "",
         discountPercent: "-67%",
         specificPrice: 59000,
         originalPrice: 123,
       },
       {
         sizeBox: "",
-        demension: "",
+        dimension: "",
         discountPercent: "-67%",
         specificPrice: 59000,
         originalPrice: 123,
       },
       {
         sizeBox: "",
-        demension: "",
+        dimension: "",
         discountPercent: "-67%",
         specificPrice: 59000,
         originalPrice: 123,
       },
       {
         sizeBox: "",
-        demension: "",
+        dimension: "",
         discountPercent: "-67%",
         specificPrice: 59000,
         originalPrice: 123,
       },
       {
         sizeBox: "",
-        demension: "",
+        dimension: "",
         discountPercent: "-67%",
         specificPrice: 59000,
         originalPrice: 123,
@@ -167,38 +167,38 @@ export const PRODUCT_LIST_DATA = [
     vendor: "Mỹ",
 
     status: 1,
-    info: [
+    variants: [
       {
         sizeBox: "",
-        demension: "",
+        dimension: "",
         discountPercent: "-67%",
         specificPrice: 59000,
         originalPrice: 123,
       },
       {
         sizeBox: "",
-        demension: "",
+        dimension: "",
         discountPercent: "-67%",
         specificPrice: 59000,
         originalPrice: 123,
       },
       {
         sizeBox: "",
-        demension: "",
+        dimension: "",
         discountPercent: "-67%",
         specificPrice: 59000,
         originalPrice: 123,
       },
       {
         sizeBox: "",
-        demension: "",
+        dimension: "",
         discountPercent: "-67%",
         specificPrice: 59000,
         originalPrice: 123,
       },
       {
         sizeBox: "",
-        demension: "",
+        dimension: "",
         discountPercent: "-67%",
         specificPrice: 59000,
         originalPrice: 123,
@@ -220,38 +220,38 @@ export const PRODUCT_LIST_DATA = [
     vendor: "Mỹ",
 
     status: 1,
-    info: [
+    variants: [
       {
         sizeBox: "",
-        demension: "",
+        dimension: "",
         discountPercent: "-67%",
         specificPrice: 59000,
         originalPrice: 123,
       },
       {
         sizeBox: "",
-        demension: "",
+        dimension: "",
         discountPercent: "-67%",
         specificPrice: 59000,
         originalPrice: 123,
       },
       {
         sizeBox: "",
-        demension: "",
+        dimension: "",
         discountPercent: "-67%",
         specificPrice: 59000,
         originalPrice: 123,
       },
       {
         sizeBox: "",
-        demension: "",
+        dimension: "",
         discountPercent: "-67%",
         specificPrice: 59000,
         originalPrice: 123,
       },
       {
         sizeBox: "",
-        demension: "",
+        dimension: "",
         discountPercent: "-67%",
         specificPrice: 59000,
         originalPrice: 123,
@@ -273,38 +273,38 @@ export const PRODUCT_LIST_DATA = [
     vendor: "Mỹ",
 
     status: 1,
-    info: [
+    variants: [
       {
         sizeBox: "",
-        demension: "",
+        dimension: "",
         discountPercent: "-67%",
         specificPrice: 59000,
         originalPrice: 123,
       },
       {
         sizeBox: "",
-        demension: "",
+        dimension: "",
         discountPercent: "-67%",
         specificPrice: 59000,
         originalPrice: 123,
       },
       {
         sizeBox: "",
-        demension: "",
+        dimension: "",
         discountPercent: "-67%",
         specificPrice: 59000,
         originalPrice: 123,
       },
       {
         sizeBox: "",
-        demension: "",
+        dimension: "",
         discountPercent: "-67%",
         specificPrice: 59000,
         originalPrice: 123,
       },
       {
         sizeBox: "",
-        demension: "",
+        dimension: "",
         discountPercent: "-67%",
         specificPrice: 59000,
         originalPrice: 123,

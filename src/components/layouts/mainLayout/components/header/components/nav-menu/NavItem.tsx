@@ -6,10 +6,10 @@ import SubNavItem from "./sub-nav/SubNavItem";
 import { NAV_LIST_DATA } from "@/configs/navListData";
 
 type NavItemProps = {
-  item: NavItemUnit;
+  data: NavItemUnit;
 };
 
-const NavItem = ({ item }: NavItemProps) => {
+const NavItem = ({ data }: NavItemProps) => {
   const [isHovering, setIsHovering] = useState(false);
 
   return (
@@ -20,19 +20,23 @@ const NavItem = ({ item }: NavItemProps) => {
       onMouseEnter={() => {
         setIsHovering(true);
       }}
+      position="relative"
+      _after={{
+        content: '""',
+        display: "block",
+        height: "2px",
+        width: "0",
+        bgColor: "primary",
+        position: "absolute",
+        bottom: 0,
+        opacity: 0,
+        left: 0,
+        transition: "all .5s ",
+      }}
       _hover={{
         _after: {
-          content: '""',
-          display: "block",
-          height: "1px",
           width: "100%",
-          bgColor: "primary",
-          position: "relative",
-          bottom: 0,
-          left: 0,
-          transformOrigin: "0%",
-          transform: isHovering ? "scaleX(1)" : "scaleX(0)",
-          transition: "transform 0.4s ease-in-out",
+          opacity: 1,
         },
       }}
     >
@@ -42,20 +46,22 @@ const NavItem = ({ item }: NavItemProps) => {
         color="primary"
         fontWeight="extrabold"
         letterSpacing="0.75px"
-        href={item.url}
+        href={data.url}
         fontSize={14}
         py={15}
       >
-        {item.label}
-        <ChevronDownIcon
-          transform={isHovering ? "rotate(180deg)" : ""}
-          transition="all 0.3s ease"
-          boxSize={5}
-        />
+        {data.label}
+        {!!data.children && (
+          <ChevronDownIcon
+            transform={isHovering ? "rotate(180deg)" : ""}
+            transition="all 0.3s ease"
+            boxSize={5}
+          />
+        )}
       </Link>
 
       {/* sub-menu */}
-      <Box></Box>
+      {!!data.children && <SubNavItem data={data.children} />}
     </ListItem>
   );
 };

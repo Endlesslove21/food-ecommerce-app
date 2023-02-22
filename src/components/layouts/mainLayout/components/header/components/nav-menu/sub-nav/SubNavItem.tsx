@@ -1,24 +1,24 @@
-import React from "react";
-import { Box, chakra, Link, ListItem, UnorderedList } from "@chakra-ui/react";
+import { Box, Link, ListItem, UnorderedList } from "@chakra-ui/react";
 import { NavItemUnit } from "@/types/navItemUnit";
-type SubNavItemProps = {
-  label: string;
-  navContentList: NavItemUnit["children"];
+type Props = {
+  data: NavItemUnit["children"];
 };
-const Nav = chakra("nav");
-const SubNavItem = ({ label, navContentList }: SubNavItemProps) => {
+
+const SubNavItem = ({ data }: Props) => {
+  if (!!!data) return null;
+  const isHasChildren = true;
+  if (!isHasChildren) return null;
   return (
     <Box>
-      <Link>{label}</Link>
-      <Nav>
+      {data.map((rootItem) => (
         <UnorderedList>
-          {navContentList?.map((item) => (
+          {rootItem.children!.map((item) => (
             <ListItem>
               <Link>{item.label}</Link>
             </ListItem>
           ))}
         </UnorderedList>
-      </Nav>
+      ))}
     </Box>
   );
 };
