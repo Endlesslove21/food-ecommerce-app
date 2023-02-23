@@ -12,6 +12,15 @@ const theme = extendTheme({
   fonts: {
     body: `'Quicksand', sans-serif`,
   },
+
+  styles: {
+    body: {
+      a: {
+        listStyleType: "none",
+      },
+    },
+    global: {},
+  },
 });
 
 export default theme;

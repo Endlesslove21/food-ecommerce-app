@@ -44,6 +44,7 @@ const NavItem = ({ data }: NavItemProps) => {
         display="block"
         _hover={{ textDecoration: "none" }}
         color="primary"
+        position="relative"
         fontWeight="extrabold"
         letterSpacing="0.75px"
         href={data.url}
@@ -51,19 +52,17 @@ const NavItem = ({ data }: NavItemProps) => {
         py={15}
       >
         {data.label}
-        {!!data.children && (
-          <ChevronDownIcon
-            transform={isHovering ? "rotate(180deg)" : ""}
-            transition="all 0.3s ease"
-            boxSize={5}
-          />
-        )}
+
+        <ChevronDownIcon
+          transform={isHovering ? "rotate(180deg)" : ""}
+          transition="all 0.3s ease"
+          boxSize={5}
+        />
       </Link>
 
       {/* sub-menu */}
-      {!!data.children && <SubNavItem data={data.children} />}
+      {isHovering ? !!data.children && <SubNavItem data={data.children} /> : ""}
     </ListItem>
   );
 };
-
 export default NavItem;
