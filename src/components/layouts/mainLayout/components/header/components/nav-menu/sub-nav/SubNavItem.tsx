@@ -3,12 +3,12 @@ import {
   Flex,
   Grid,
   GridItem,
-  Link,
   ListItem,
   UnorderedList,
 } from "@chakra-ui/react";
 import { NavItemUnit } from "@/types/navItemUnit";
 import { useMemo } from "react";
+import Link from "@/components/elements/link";
 type Props = {
   data: NavItemUnit[];
   isOpen?: boolean;
@@ -27,12 +27,16 @@ const SubNavItem = ({ data, isOpen }: Props) => {
         <Grid templateColumns={"repeat(4, 1fr)"}>
           {data.map((rootItem) => (
             <GridItem>
-              <Link listStyleType={"none"}>{rootItem.label}</Link>
+              <Link to="/" listStyleType={"none"}>
+                {rootItem.label}
+              </Link>
               {rootItem.children && (
                 <UnorderedList>
                   {rootItem.children.map((item) => (
                     <ListItem borderBottom="1px solid #ccc" py={2}>
-                      <Link listStyleType={"none"}>{item.label}</Link>
+                      <Link to="/" listStyleType={"none"}>
+                        {item.label}
+                      </Link>
                     </ListItem>
                   ))}
                 </UnorderedList>
@@ -43,7 +47,9 @@ const SubNavItem = ({ data, isOpen }: Props) => {
       ) : (
         data.map((rootItem) => (
           <Box borderBottom="1px solid #ccc" py={2}>
-            <Link listStyleType={"none"}>{rootItem.label}</Link>
+            <Link to="/" listStyleType={"none"}>
+              {rootItem.label}
+            </Link>
           </Box>
         ))
       ),
