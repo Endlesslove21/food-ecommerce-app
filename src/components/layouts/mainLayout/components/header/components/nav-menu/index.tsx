@@ -6,7 +6,7 @@ type Props = {};
 
 const NavMenu = (props: Props) => {
   return (
-    <NavList>
+    <NavList position={"relative"}>
       {NAV_LIST_DATA.map((item, index) => (
         <NavItem key={item.label} data={item} />
       ))}

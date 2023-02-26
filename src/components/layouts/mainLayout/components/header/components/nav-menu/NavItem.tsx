@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ListItem, Link, Box, Text } from "@chakra-ui/react";
+import { ListItem, Link, Box, Text, Grid } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import { NavItemUnit } from "@/types/navItemUnit";
 import SubNavItem from "./sub-nav/SubNavItem";
@@ -20,36 +20,36 @@ const NavItem = ({ data }: NavItemProps) => {
       onMouseEnter={() => {
         setIsHovering(true);
       }}
-      position="relative"
-      _after={{
-        content: '""',
-        display: "block",
-        height: "2px",
-        width: "0",
-        bgColor: "primary",
-        position: "absolute",
-        bottom: 0,
-        opacity: 0,
-        left: 0,
-        transition: "all .5s ",
-      }}
-      _hover={{
-        _after: {
-          width: "100%",
-          opacity: 1,
-        },
-      }}
     >
       <Link
         display="block"
-        _hover={{ textDecoration: "none" }}
+        width={"100%"}
         color="primary"
-        position="relative"
         fontWeight="extrabold"
         letterSpacing="0.75px"
         href={data.url}
         fontSize={14}
         py={15}
+        position="relative"
+        _after={{
+          content: '""',
+          display: "block",
+          height: "2px",
+          width: "0",
+          bgColor: "primary",
+          position: "absolute",
+          bottom: 0,
+          opacity: 0,
+          left: 0,
+          transition: "all .5s ",
+        }}
+        _hover={{
+          textDecoration: "none",
+          _after: {
+            width: "100%",
+            opacity: 1,
+          },
+        }}
       >
         {data.label}
 
@@ -59,9 +59,10 @@ const NavItem = ({ data }: NavItemProps) => {
           boxSize={5}
         />
       </Link>
-
       {/* sub-menu */}
-      {isHovering ? !!data.children && <SubNavItem data={data.children} /> : ""}
+      {!!data.children && (
+        <SubNavItem isOpen={isHovering} data={data.children} />
+      )}
     </ListItem>
   );
 };

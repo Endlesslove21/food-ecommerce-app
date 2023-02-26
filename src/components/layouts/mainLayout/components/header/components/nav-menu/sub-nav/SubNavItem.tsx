@@ -1,38 +1,64 @@
-import { Box, Flex, Link, ListItem, UnorderedList } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Grid,
+  GridItem,
+  Link,
+  ListItem,
+  UnorderedList,
+} from "@chakra-ui/react";
 import { NavItemUnit } from "@/types/navItemUnit";
+import { useMemo } from "react";
 type Props = {
   data: NavItemUnit[];
+  isOpen?: boolean;
 };
 
-const SubNavItem = ({ data }: Props) => {
-  return (
-    <Box
-      width="100%"
-      bgColor={"white"}
-      position="absolute"
-      left="0"
-      zIndex="10"
-      color={"second"}
-    >
-      {data.map((rootItem) =>
-        rootItem.children ? (
-          <Box>
-            <Link listStyleType={"none"}>{rootItem.label}</Link>
+const SubNavItem = ({ data, isOpen }: Props) => {
+  const isMultipleChildren = useMemo(() => {
+    if (!!!data) return null;
 
-            <UnorderedList>
-              {rootItem.children.map((item) => (
-                <ListItem borderBottom="1px solid #ccc" py={2}>
-                  <Link listStyleType={"none"}>{item.label}</Link>
-                </ListItem>
-              ))}
-            </UnorderedList>
-          </Box>
-        ) : (
+    return data.some((item) => !!item.children);
+  }, [data]);
+
+  const renderItems = useMemo(
+    () =>
+      isMultipleChildren === null ? null : isMultipleChildren ? (
+        <Grid templateColumns={"repeat(4, 1fr)"}>
+          {data.map((rootItem) => (
+            <GridItem>
+              <Link listStyleType={"none"}>{rootItem.label}</Link>
+              {rootItem.children && (
+                <UnorderedList>
+                  {rootItem.children.map((item) => (
+                    <ListItem borderBottom="1px solid #ccc" py={2}>
+                      <Link listStyleType={"none"}>{item.label}</Link>
+                    </ListItem>
+                  ))}
+                </UnorderedList>
+              )}
+            </GridItem>
+          ))}
+        </Grid>
+      ) : (
+        data.map((rootItem) => (
           <Box borderBottom="1px solid #ccc" py={2}>
             <Link listStyleType={"none"}>{rootItem.label}</Link>
           </Box>
-        )
-      )}
+        ))
+      ),
+    [isMultipleChildren]
+  );
+
+  return (
+    <Box
+      bgColor={"white"}
+      position="absolute"
+      zIndex={isOpen ? 10 : -1}
+      color={"second"}
+    >
+      {/* items */}
+      {renderItems}
     </Box>
   );
 };
