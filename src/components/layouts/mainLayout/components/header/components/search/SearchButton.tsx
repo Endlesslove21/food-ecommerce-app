@@ -1,7 +1,7 @@
 import CustomButton from "@/components/elements/button";
-import React, { PropsWithchildren } from "react";
+import React, { PropsWithChildren } from "react";
 
-type SearchButtonProps = PropsWithchildren<{
+type SearchButtonProps = PropsWithChildren<{
   handleClickSearchBtn?: React.MouseEventHandler<HTMLButtonElement>;
 }>;
 

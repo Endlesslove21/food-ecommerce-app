@@ -1,7 +1,7 @@
-import React, { CSSProperties, PropsWithchildren } from "react";
+import React, { CSSProperties, PropsWithChildren } from "react";
 import { ListItem, Link } from "@chakra-ui/react";
 
-type ItemProps = PropsWithchildren<{ text: any }>;
+type ItemProps = PropsWithChildren<{ text: any }>;
 
 const Item = ({ children, text }: ItemProps) => {
   return (

@@ -11,16 +11,16 @@ import {
   Text,
 } from "@chakra-ui/react";
 type Props = {
-  itemList: Product["productList"];
+  data: Product[];
 };
 
-const ProductItemList = ({ itemList }: Props) => {
+const ProductItemList = ({ data }: Props) => {
   return (
     <TabPanel>
       <Grid templateColumns={"repeat(4, 1fr)"} gap={5}>
-        {itemList.map((item) => (
+        {data.map((item) => (
           <Center>
-            <Image src={item.image} alt={item.itemName} />
+            <Image src={item.imageUrl} alt={item.itemName} />
             <Heading as={"h6"}>{item.itemName}</Heading>
             <Text>{item.originalPrice}đ</Text>
             <Button>Chọn mua</Button>

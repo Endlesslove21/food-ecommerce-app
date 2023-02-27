@@ -13,10 +13,7 @@ const Contents = (props: Props) => {
   return (
     <Box>
       <ImageSlider images={IMAGES} />
-      <ProductList
-        productLabel="Quà tặng trái cây"
-        productData={FRUIT_GIFTS_DATA}
-      />
+      <ProductList label="Quà tặng trái cây" data={FRUIT_GIFTS_DATA} />
     </Box>
   );
 };

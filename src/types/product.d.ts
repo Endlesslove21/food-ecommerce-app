@@ -1,21 +1,25 @@
+export type ProductVariant = {
+  sizeBox: string;
+  dimension: string;
+  discountPercent: number;
+  specificPrice: number;
+};
+
 export type Product = {
+  productId: number;
+  itemName: string;
+  imageUrl: string;
+  slug: string;
+  vendor?: string;
+  originalPrice: number;
+  status: number;
+  variants?: ProductVariant[];
+  description: string;
+};
+
+export type ProductByCategory = {
   id: number;
-  name: string;
-  iconName: string;
-  productList: {
-    productId: number;
-    itemName: string;
-    image: string;
-    code: string;
-    vendor?: string;
-    originalPrice: number;
-    status: number;
-    varients?: {
-      sizeBox: string;
-      dimension: string;
-      discountPercent: number;
-      specificPrice: number;
-    }[];
-    description: string;
-  }[];
+  categoryName: string;
+  categoryIconUrl: string;
+  products: Product[];
 };

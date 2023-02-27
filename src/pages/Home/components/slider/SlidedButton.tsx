@@ -1,7 +1,7 @@
 import { Button, ButtonProps } from "@chakra-ui/react";
-import React, { PropsWithchildren } from "react";
+import React, { PropsWithChildren } from "react";
 
-type SlidedButtonProps = PropsWithchildren<{
+type SlidedButtonProps = PropsWithChildren<{
   onClick: React.MouseEventHandler<HTMLButtonElement>;
 }> &
   ButtonProps;

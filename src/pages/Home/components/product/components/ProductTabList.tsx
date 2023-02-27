@@ -1,4 +1,3 @@
-import NavList from "@/components/elements/nav-list";
 import { useState } from "react";
 import {
   Box,
@@ -10,34 +9,34 @@ import {
   Tabs,
   Text,
 } from "@chakra-ui/react";
-import { Product } from "@/types/product";
+import { ProductByCategory } from "@/types/product";
 import ProductItemList from "./ProductItemList";
 
 type Props = {
-  productData: Product[];
+  data: ProductByCategory[];
 };
 
-const ProductTabList = ({ productData }: Props) => {
+const ProductTabList = ({ data }: Props) => {
   const [isClicked, setIsClicked] = useState<boolean>(false);
 
   return (
     <Tabs variant={"unstyled"}>
       <TabList>
-        {productData.map((item) => (
+        {data.map((item) => (
           <Tab _selected={{ color: "white", bgColor: "primary" }}>
             <Box key={item.id}>
               <Center>
-                <Image src={item.iconName} alt={item.name} />
+                <Image src={item.categoryIconUrl} alt={item.categoryName} />
               </Center>
-              <Text mt={1}>{item.name}</Text>
+              <Text mt={1}>{item.categoryName}</Text>
             </Box>
           </Tab>
         ))}
       </TabList>
 
       <TabPanels>
-        {productData.map((item) => (
-          <ProductItemList itemList={item.productList} />
+        {data.map((item) => (
+          <ProductItemList data={item.products} />
         ))}
       </TabPanels>
     </Tabs>
