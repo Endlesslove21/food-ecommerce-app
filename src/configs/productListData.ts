@@ -1,6 +1,6 @@
 export const PRODUCT_LIST_DATA = [
   {
-    id: "1",
+    id: 1,
     name: "Flash Sale - 99k/ 01kg Nho đen không hạt Mỹ",
     images: [
       "/assets/images/products/nhodenkhonghat/img1.webp",

@@ -3,7 +3,7 @@ import React, { PropsWithChildren } from "react";
 
 type ProductLabelProps = PropsWithChildren<{}>;
 
-const ProductLabel = (props: ProductLabelProps) => {
+const ProductLabel = ({ children }: ProductLabelProps) => {
   return (
     <Flex
       justifyContent="center"
@@ -28,7 +28,7 @@ const ProductLabel = (props: ProductLabelProps) => {
         as="h2"
         fontFamily="Quicksand"
       >
-        Quà tặng trái cây
+        {children}
       </Heading>
     </Flex>
   );
