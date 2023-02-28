@@ -9,8 +9,7 @@ const ProductLabel = ({ children }: ProductLabelProps) => {
       justifyContent="center"
       pt={20}
       m={"0 auto"}
-      maxW={"1300px"}
-      width="60%"
+      width="80%"
       borderBottom="1px solid"
       borderColor="gray.300"
     >

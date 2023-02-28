@@ -17,18 +17,29 @@ const Home = (props: Props) => {
     <MainLayout>
       <ImageSlider images={IMAGES} />
 
-      <Container maxW={"1300px"}>
+      <Container centerContent maxW={"1300px"}>
         <ProductList
-          containerProps={{ mb: "200px" }}
+          containerProps={{ mb: "200px", m: "0 auto" }}
           label="Quà tặng trái cây"
           data={FRUIT_GIFTS_DATA}
+          productBannerUrl="/assets/images/banners/products/banner_quatangtraicay.webp"
         />
       </Container>
-      <Container maxW={[100, 150, null, 200]}>
-        <ProductList label="Quà tặng trái cây" data={FRUIT_GIFTS_DATA} />
+      <Container centerContent maxW={"1300px"}>
+        <ProductList
+          containerProps={{ mb: "200px", m: "0 auto" }}
+          label="Sản phẩm"
+          data={FRUIT_GIFTS_DATA}
+          productBannerUrl="/assets/images/banners/products/banner_sanpham.webp"
+        />
       </Container>
-      <Container maxW={"1300px"}>
-        <ProductList label="Quà tặng trái cây" data={FRUIT_GIFTS_DATA} />
+      <Container centerContent maxW={"1300px"}>
+        <ProductList
+          containerProps={{ mb: "200px", m: "0 auto" }}
+          label="Trái cây tươi hằng ngày"
+          data={FRUIT_GIFTS_DATA}
+          productBannerUrl="/assets/images/banners/products/banner_traicaytuoihangngay.webp"
+        />
       </Container>
     </MainLayout>
   );

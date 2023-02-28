@@ -7,15 +7,21 @@ import ProductTabList from "./components/ProductTabList";
 type Props = {
   data: ProductByCategory[];
   label: string;
+  productBannerUrl: string;
   containerProps?: ChakraStyledOptions;
 };
 
-const ProductList = ({ data, label, containerProps }: Props) => {
+const ProductList = ({
+  data,
+  label,
+  productBannerUrl,
+  containerProps,
+}: Props) => {
   return (
     <Box {...containerProps}>
       <ProductLabel>{label}</ProductLabel>
 
-      <ProductTabList data={data} />
+      <ProductTabList data={data} productBannerUrl={productBannerUrl} />
     </Box>
   );
 };
